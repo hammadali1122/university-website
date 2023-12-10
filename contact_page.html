@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!-- ------ Header ----- -->
+    <header class="about_header">
+        <nav>
+            <a href="index.html">
+                <img src="image_resources/logo.png" alt="logo_image" class="logo_image">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="about_page.html"><li>ABOUT</li></a>
+                    <a href="course_page.html"><li>COURSE</li></a>
+                    <a href="blog_page.html"><li>BLOG</li></a>
+                    <a href="contact_page.html"><li>CONTACT</li></a>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="about-text-box">
+            
+            <h1>Contact us</h1>
+
+            
+        </div>
+        
+    </header>
+
+    <!-- ----------Contact Us page content-------- -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26970.603237132553!2d74.34414154280819!3d32.32997273272338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391edbaf7b7f8025%3A0xdf762e65d36172c0!2sDaska%2C%20Sialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1698951351147!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-form">
+        <div class="contact-col left-parent">
+            <div class="left-sub-div">
+                <i class="fa fa-home"></i>
+                <span>
+                    <h3>Stadium road Daska</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </span>
+            </div>
+            <div class="left-sub-div">
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h3>+92 3026116609</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </span>
+            </div>
+            <div class="left-sub-div">
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h3>info@gmail.com</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </span>
+            </div>
+            
+        </div>
+
+        <div class="contact-col right-parant">
+            <form class="comment-form" action="">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+    </section>
+
+
+    <!-- -------Footer--------- -->
+    <div class="footer">
+        <h1>About Us</h1>
+        
+        <div class="links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>
+            Made By: <strong>Hammad ALi</strong>
+        </p>
+    </div>
+
+
+    <!-- -----Java Script Code for Toogle Menu-------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+</body>
+</html>

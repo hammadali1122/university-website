@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!-- ------ Header ----- -->
+    <header class="about_header">
+        <nav>
+            <a href="index.html">
+                <img src="image_resources/logo.png" alt="logo_image" class="logo_image">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="about_page.html"><li>ABOUT</li></a>
+                    <a href="course_page.html"><li>COURSE</li></a>
+                    <a href="blog_page.html"><li>BLOG</li></a>
+                    <a href="contact_page.html"><li>CONTACT</li></a>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="about-text-box">
+            
+            <h1>ABOUT US</h1>
+
+            
+        </div>
+        
+    </header>
+
+    <div class="about-main">
+        <div class="sub-main about-left"> 
+            <h1>We are the World's Largest University</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas vel natus animi dolore repellat odit et cumque eaque quia amet alias blanditiis, dignissimos laborum harum aspernatur nostrum eveniet vero aliquam sapiente voluptatum modi tempora! Minus qui, dicta recusandae facere, omnis fugit perferendis ab deserunt iusto similique, placeat quam voluptates officiis!</p>
+            <a href="">Explore </a>
+        </div>
+
+        <div class="sub-main abot-right">
+        </div>
+    </div>
+
+    <!-- -------Footer--------- -->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis laboriosam maiores tempore cupiditate aliquam odit veritatis in unde, ratione autem  <br>incidunt consequatur? Numquam nobis exercitationem perferendis tempora  saepe sapiente quo nemo ea aperiam.</p>
+        <div class="links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>
+            Made By: <strong>Hammad ALi</strong>
+        </p>
+    </section>
+
+
+    <!-- -----Java Script Code for Toogle Menu-------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+</body>
+</html>
